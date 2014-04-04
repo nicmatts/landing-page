@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	width: 1200px;
+	margin: 4em auto;
+	font-family: 'Roboto', sans-serif;
+	color: 	#2A2A2A;
+	background: #fffffc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Libre Baskerville', serif;
+}
+
+.logo {
+	margin-bottom: 1em;
+	position: relative;
+}
+
+.name a {
+	text-decoration: none;
+	color: #2A2A2A;
+	text-shadow: 0px 1px 1px #006F6B;
+}
+
+.name a:hover {
+	color: #767676;
+}
+
+.shovel {
+	position: absolute;
+	bottom: -1px;
+	left: 389px;
+}
+
+.tagline {
+	color: #B50005;
+	margin: 3px 0 0 20px;
+	font-size: 1.3em;
+	font-weight: bold;
+	font-family: 'Libre baskerville', serif;
+}
+
+.large-image {
+	margin: auto;
+}
+
+.menu {
+	background-color: #006F6B;
+	height: 36px;
+	width: 1200px;
+	border-radius: 2px;
+}
+
+.menu ul li {
+	display: inline-block;
+	padding: 10px 0 0 0;
+	text-align: center;
+	height: 36px;
+	font-weight: bold;
+	font-family: 'Libre baskerville', serif;
+	color: white;
+	width: 296px;
+	float: left;
+}
+
+.menu ul li:nth-child(4) {
+	float: right;
+}
+
+.menu ul li:hover{
+	background: #52B7B3;
+	color: #B50005;
+	height: 26px;
+}
+
+.large-image {
+	position: relative;
+	margin-top: 7px;
+}
+
+.large-image img {
+	border-radius: 2px;
+}
+
+.tag-2 {
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+	color: #B50005;
+	font-size: 2em;
+	text-shadow: 1px 1px 3px #2A2A2A;
+	-webkit-animation: fadein 4s; 
+	-moz-animation: fadein 4s;
+	-ms-animation: fadein 4s;
+	-o-animation: fadein 4s; 
+	animation: fadein 4s;
+}
+
+.triptych {
+	margin: 30px 0;
+	height: 220px;
+	background: url('trip-bg-1.png');
+	border-radius: 2px;
+	padding: 15px;
+}
+
+.triptych h3 {
+	font-size: 2em;
+	margin: 0 0 20px 20px;
+}
+
+.trip-1, .trip-2, .trip-3 {
+	display: inline-block;
+	background: url('trip-bg-2.png');
+	float: left;
+	width: 320px;
+	padding: 15px;
+	font-size: 125%;
+	height: 127px;
+	line-height: 1.2;
+	border-radius: 2px;
+}
+
+.trip-1:hover, .trip-2:hover, .trip-3:hover {
+	background: url('trip-bg-1.png');
+}
+
+.trip-1, .trip-2 {
+	margin-right: 37px;
+}
+
+.trip-1 {
+	margin-left: 24px;
+}
+
+.triptych p {
+	margin-top: 10px;
+}
+
+.triptych a {
+	text-decoration: none;
+	color: #2A2A2A;
+}
+
+
+footer {
+	background: #DEDEDE;
+	padding: 6px 10px;
+	height: 68px;
+	text-shadow: 1px 1px 1px #ccc;
+	position: relative;
+	border-radius: 2px;
+}
+
+.address {
+	float: right;
+	display: inline-block;
+	text-align: right;
+}
+
+.contact {
+	float: left;
+	display: inline-block;	
+}
+
+footer ul {
+	display: inline-block;
+}
+
+footer ul li {
+	padding: 3px;
+}
+
+footer ul li a {
+	color: #760003;
+}
+
+footer ul li a:hover {
+	color: #DA373B;
+}
+
+footer ul li a:visited {
+	color: #760003;
+}
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
